@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858478867696",
+    "project_id": "good-selection-27baf",
+    "storage_bucket": "good-selection-27baf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858478867696:android:d9cccca8f807173686be35",
+        "android_client_info": {
+          "package_name": "com.example.goodselection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFiw90zkE_JeXkBphFfW2tZe4FQ4eIlYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
