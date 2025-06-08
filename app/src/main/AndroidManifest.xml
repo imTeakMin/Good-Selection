@@ -42,6 +42,15 @@
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false"/>
+        <activity
+            android:name=".RouletteActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".RouletteSettingActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false"/>
 
     </application>
 

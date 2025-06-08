@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogoutActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_point"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="포인트" />
+
+        <TextView
+            android:id="@+id/text_account"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="계정" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/btn_logoutMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="사용을 종료하시고 메인화면으로 돌아가시겠습니까?\n수정된 내용을 저장합니다." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_logoutOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/btn_logoutNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

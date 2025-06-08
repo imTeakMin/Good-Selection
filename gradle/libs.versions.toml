@@ -11,6 +11,7 @@ googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.2.1"
 firebaseDatabase = "21.0.0"
 firebaseInappmessaging = "21.0.2"
+luckywheel="0.3.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -23,6 +24,7 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-inappmessaging = { group = "com.google.firebase", name = "firebase-inappmessaging", version.ref = "firebaseInappmessaging" }
+luckywheel={ group="com.github.mmoamenn", name="LuckyWheel_Android", version.ref="luckywheel"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
