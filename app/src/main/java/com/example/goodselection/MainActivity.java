@@ -58,10 +58,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mainBinding.btnRoulette.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showRouletteSettingActivity();
+            }
+        });
+
+        mainBinding.btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showLogoutActivity();
+            }
+        });
+
+        mainBinding.btnMembershipCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showMembershipCancelActivity();
+            }
+        });
+
     }
 
     public void showLadderSettingActivity(){
         Intent intent=new Intent(MainActivity.this,LadderSettingActivity.class);
+        startActivity(intent);
+    }
+
+    public void showRouletteSettingActivity(){
+        Intent intent=new Intent(MainActivity.this,RouletteSettingActivity.class);
+        startActivity(intent);
+    }
+
+    public void showLogoutActivity(){
+        Intent intent=new Intent(MainActivity.this,LogoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void showMembershipCancelActivity(){
+        Intent intent=new Intent(MainActivity.this,MembershipCancelActivity.class);
         startActivity(intent);
     }
 

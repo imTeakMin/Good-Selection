@@ -51,6 +51,9 @@
         <activity
             android:name=".LogoutActivity"
             android:exported="false"/>
+        <activity
+            android:name=".MembershipCancelActivity"
+            android:exported="false"/>
 
     </application>
 
