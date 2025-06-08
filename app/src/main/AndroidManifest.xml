@@ -28,6 +28,21 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+        <activity
+            android:name=".LadderSettingActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LadderActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LadderResultActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AdvertisementActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

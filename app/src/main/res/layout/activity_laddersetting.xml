@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LadderSettingActivity">
+
+    <!-- EditText - 사용자로부터 세로 줄 개수를 입력받는 부분 -->
+    <EditText
+        android:id="@+id/text_ladderCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="세로 줄 개수 입력"
+        android:inputType="number"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button - 게임 시작 버튼 -->
+    <Button
+        android:id="@+id/btn_checkLadderCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ladderCount" />
+
+    <!-- 상단 EditText들을 감싸는 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_checkLadderCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="32dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <!-- 하단 EditText들을 감싸는 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layout_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="32dp"
+        android:gravity="center">
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
