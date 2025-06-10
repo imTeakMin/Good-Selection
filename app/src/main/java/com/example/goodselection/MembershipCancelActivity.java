@@ -79,12 +79,13 @@ public class MembershipCancelActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         // 데이터 삭제 성공 후 계정 삭제
                         user.delete().addOnCompleteListener(deleteTask -> {
+
                             if (deleteTask.isSuccessful()) {
                                 // 계정 삭제 성공
                                 Intent intent = new Intent(MembershipCancelActivity.this, LoginActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK); // 백스택 지우기
                                 startActivity(intent);
-                                finish(); // 현재 액티비티 종료
+                                finish(); // 뒤로가기 버튼으로 못 돌아오도록 설정
                             } else {
                                 Toast.makeText(MembershipCancelActivity.this, "계정 탈퇴 실패", Toast.LENGTH_SHORT).show();
                             }

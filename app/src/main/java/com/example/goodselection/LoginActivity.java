@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 String strEmail = id.getText().toString();
                 String strPwd= password.getText().toString();
 
+                // firebase에서 일치하는 계정 확인
                 checkUserAccount(mFirebaseAuth,strEmail,strPwd);
 
             }

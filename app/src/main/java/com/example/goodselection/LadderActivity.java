@@ -154,18 +154,18 @@ public class LadderActivity extends AppCompatActivity {
             int colSpacing = width / (numColumns + 1);
             int rowSpacing = height / 12;
 
-            // Draw vertical lines
+            // 세로줄 그리기
             for (int i = 0; i < numColumns; i++) {
                 int x = colSpacing * (i + 1);
                 canvas.drawLine(x, rowSpacing, x, height - rowSpacing, paint);
 
-                // Draw labels
+                // 도착 지점 TextView 화면에 그리기
                 paint.setTextSize(40);
                 canvas.drawText(arrivalTexts[i], x-10, height - 150, paint);
             }
 
             int y=0;
-            // Draw horizontal lines
+            // 가로줄 그리기
             for (int line : horizontalLines) {
                 int x1 = colSpacing * (line + 1);
                 int x2 = colSpacing * (line + 2);
@@ -217,14 +217,13 @@ public class LadderActivity extends AppCompatActivity {
             ArrayList<Animator> animators = new ArrayList<>();
             int prevY = currentY;
 
+            // 애니메이션 추가
             for (Horizon h : horizon) {
                 if (h.yPosition <= prevY) continue;
 
-                // 내려가기 애니메이션 (다음 가로선까지)
                 animators.add(ObjectAnimator.ofFloat(textView, "y", prevY, h.yPosition));
                 prevY = h.yPosition;
 
-                // 왼쪽 or 오른쪽 이동
                 if (Math.abs(currentX - h.firstColumn) < 10) {
                     currentX = h.secondColumn;
                     animators.add(ObjectAnimator.ofFloat(textView, "x", h.firstColumn, h.secondColumn));

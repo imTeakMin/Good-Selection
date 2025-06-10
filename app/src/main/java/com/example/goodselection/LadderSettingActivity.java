@@ -63,7 +63,7 @@ public class LadderSettingActivity extends AppCompatActivity {
             arrivalLayout.addView(bottomEditText);
         }
 
-        // "게임 시작" 버튼을 생성하고, 하단에 추가
+        // "게임 시작" 버튼을 생성하고 하단에 추가
         Button startButton = new Button(this);
         startButton.setText("게임 시작");
         startButton.setOnClickListener(new View.OnClickListener() {

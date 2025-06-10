@@ -61,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                     user.setPoint(0);
                     user.setGoods();
 
-                    // setValue : database에 Insertion
+                    // firebase에 계정 추가 후 업데이트
                     mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(user);
 
                     makeRegisterSuccessMsg();

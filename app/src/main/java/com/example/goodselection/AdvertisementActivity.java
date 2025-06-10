@@ -74,11 +74,9 @@ public class AdvertisementActivity extends AppCompatActivity {
                     });
                 }
 
-                // 홈 버튼 클릭 시 동작 설정
                 goToMain.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // 홈 화면으로 이동
                         showMainActivity();
                     }
                 });

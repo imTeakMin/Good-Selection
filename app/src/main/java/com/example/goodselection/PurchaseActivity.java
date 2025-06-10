@@ -54,7 +54,6 @@ public class PurchaseActivity extends AppCompatActivity {
         buyGoods();
     }
 
-    // 버튼 클릭 이벤트 처리
     private void addPurchaseButtonClickEvent(int buttonNumber) {
         DatabaseReference userRef = FirebaseDatabase.getInstance()
                 .getReference("UserInformation")

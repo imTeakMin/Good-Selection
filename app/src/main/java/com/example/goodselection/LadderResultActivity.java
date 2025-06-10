@@ -103,11 +103,9 @@ public class LadderResultActivity extends AppCompatActivity {
         showAd.setLayoutParams(new LinearLayout.LayoutParams(0,
                 LinearLayout.LayoutParams.WRAP_CONTENT, 1));
 
-        // LinearLayout에 버튼 추가
         buttonRow.addView(goToMain);
         buttonRow.addView(showAd);
 
-        // LinearLayout을 container에 추가
         container.addView(buttonRow);
 
     }

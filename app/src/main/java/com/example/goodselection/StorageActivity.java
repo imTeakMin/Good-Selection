@@ -93,14 +93,13 @@ public class StorageActivity extends AppCompatActivity {
 
                             button.setOnClickListener(v -> useGoods(good));
 
-                            // 3. 아이템 컨테이너 (Vertical)
+                            // 3. 아이템 컨테이너
                             LinearLayout itemLayout = new LinearLayout(StorageActivity.this);
                             itemLayout.setOrientation(LinearLayout.VERTICAL);
                             itemLayout.setLayoutParams(new GridLayout.LayoutParams(
                                     new ViewGroup.MarginLayoutParams(dp197, ViewGroup.LayoutParams.WRAP_CONTENT)
                             ));
 
-                            // 마진 적용
                             ViewGroup.MarginLayoutParams marginParams = (ViewGroup.MarginLayoutParams) itemLayout.getLayoutParams();
                             marginParams.setMargins(dp8, dp8, dp8, dp8);
                             itemLayout.setLayoutParams(marginParams);
@@ -131,7 +130,7 @@ public class StorageActivity extends AppCompatActivity {
         DatabaseReference userRef = FirebaseDatabase.getInstance()
                 .getReference("UserInformation")
                 .child("UserAccount")
-                .child(user.getIdToken()); // user.getUid()와 동일
+                .child(user.getIdToken());
 
         userRef.setValue(user);
     }
