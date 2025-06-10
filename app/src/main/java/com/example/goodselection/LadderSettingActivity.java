@@ -34,7 +34,12 @@ public class LadderSettingActivity extends AppCompatActivity {
                 String input = columnCntInputEditText.getText().toString();
                 if (!input.isEmpty()) {
                     int numColumns = Integer.parseInt(input);
-                    addEditTexts(numColumns);
+                    if(numColumns>6){
+                        Toast.makeText(LadderSettingActivity.this, "최대 6개 가능", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        addEditTexts(numColumns);
+                    }
                 }
             }
         });

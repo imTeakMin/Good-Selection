@@ -30,7 +30,12 @@ public class RouletteSettingActivity extends AppCompatActivity {
                 String input=inputEditText.getText().toString();
                 if(!input.isEmpty()){
                     int numColumns=Integer.parseInt(input);
-                    addEditTexts(numColumns);
+                    if(numColumns>8){
+                        Toast.makeText(RouletteSettingActivity.this, "최대 8개 가능", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        addEditTexts(numColumns);
+                    }
                 }
             }
         });
