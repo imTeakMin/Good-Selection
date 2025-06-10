@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:gravity="center"
-            android:text="사용을 종료하시고 메인화면으로 돌아가시겠습니까?\n수정된 내용을 저장합니다." />
+            android:text="사용을 종료하시고 로그인 화면으로 돌아가시겠습니까?\n수정된 내용을 저장합니다." />
 
     </LinearLayout>
 
