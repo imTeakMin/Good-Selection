@@ -54,6 +54,12 @@
         <activity
             android:name=".MembershipCancelActivity"
             android:exported="false"/>
+        <activity
+            android:name=".PurchaseActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".StorageActivity"
+            android:exported="false"/>
 
     </application>
 

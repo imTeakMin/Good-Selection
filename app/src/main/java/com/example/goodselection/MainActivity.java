@@ -65,6 +65,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mainBinding.btnPurchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPurchaseActivity();
+            }
+        });
+
+        mainBinding.btnStorage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showStorageActivity();
+            }
+        });
+
         mainBinding.btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +102,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void showRouletteSettingActivity(){
         Intent intent=new Intent(MainActivity.this,RouletteSettingActivity.class);
+        startActivity(intent);
+    }
+
+    public void showPurchaseActivity(){
+        Intent intent=new Intent(MainActivity.this,PurchaseActivity.class);
+        startActivity(intent);
+    }
+
+    public void showStorageActivity(){
+        Intent intent=new Intent(MainActivity.this,StorageActivity.class);
         startActivity(intent);
     }
 
