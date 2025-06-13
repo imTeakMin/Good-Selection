@@ -1,6 +1,10 @@
 [실행 방법]
 
 1. Android Studio 실행 ( Android Studio 설치 시 애뮬레이터 설치해야됨, 만약 애뮬레이터 없으면 갤럭시 기기 연결하여 사용)
+  - Android Studio Meerkat | 2024.3.1. 이상
+  - JDK : Java 17
+  - Device :  Android studio virtual device (Medium Phone , API 35)
+  - 지원 플랫폼 : Android 전용 (iOS, 웹, 데스크탑 미지원)
 2. 왼쪽 상단 File 메뉴에서 Open... 클릭
 3. 압축 해제한 폴더 중 "GoodSelection" 폴더를 선택하고
 4. 프로젝트가 열리면 자동으로 Gradle Sync가 실행됩니다.
